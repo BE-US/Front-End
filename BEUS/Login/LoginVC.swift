@@ -17,6 +17,8 @@ class LoginVC: UIViewController {
         emailTextField.backgroundColor = .systemGray6
         emailTextField.layer.cornerRadius = 20
         emailTextField.clearButtonMode = .whileEditing
+        let emailImage = UIImage(named: "mail")?.resizeImageTo(size: CGSize(width: 25, height: 25))
+        emailTextField.addLeftImage(image: emailImage!)
         return emailTextField
     }()
     
@@ -26,6 +28,8 @@ class LoginVC: UIViewController {
         passwordTextField.backgroundColor = .systemGray6
         passwordTextField.layer.cornerRadius = 20
         passwordTextField.clearButtonMode = .whileEditing
+        let passwordImage = UIImage(named: "key")?.resizeImageTo(size: CGSize(width: 25, height: 25))
+        passwordTextField.addLeftImage(image: passwordImage!)
         return passwordTextField
     }()
     
@@ -61,6 +65,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        handleEditFunc()
         view.backgroundColor = .white
         makeSubView()
         makeConstraint()
