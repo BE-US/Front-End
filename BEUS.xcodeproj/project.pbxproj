@@ -13,6 +13,7 @@
 		007F19172AC152BE0022CB24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007F19162AC152BE0022CB24 /* Assets.xcassets */; };
 		007F191A2AC152BE0022CB24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007F19182AC152BE0022CB24 /* LaunchScreen.storyboard */; };
 		007F19232AC153170022CB24 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F19222AC153170022CB24 /* LoginVC.swift */; };
+		007F19252AC168990022CB24 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F19242AC168990022CB24 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		007F19192AC152BE0022CB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		007F191B2AC152BE0022CB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		007F19222AC153170022CB24 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		007F19242AC168990022CB24 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				007F19162AC152BE0022CB24 /* Assets.xcassets */,
 				007F19182AC152BE0022CB24 /* LaunchScreen.storyboard */,
 				007F191B2AC152BE0022CB24 /* Info.plist */,
+				007F19242AC168990022CB24 /* Extension.swift */,
 			);
 			path = BEUS;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007F19252AC168990022CB24 /* Extension.swift in Sources */,
 				007F19122AC152BE0022CB24 /* ViewController.swift in Sources */,
 				007F190E2AC152BE0022CB24 /* AppDelegate.swift in Sources */,
 				007F19232AC153170022CB24 /* LoginVC.swift in Sources */,
