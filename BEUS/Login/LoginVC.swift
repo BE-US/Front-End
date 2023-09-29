@@ -9,7 +9,10 @@ import UIKit
 
 class LoginVC: UIViewController {
     
-    let logo: UIImageView = UIImageView(image: UIImage(named: "Logo"))
+    let logo: UIImageView = {
+        let logo = UIImageView(image: UIImage(named: "Logo"))
+        return logo
+    }()
     
     let emailTextField: UITextField = {
         let emailTextField = UITextField()
@@ -56,21 +59,12 @@ class LoginVC: UIViewController {
         return findPasswordButton
     }()
     
-    let easyLoginView: UIView = {
-        let easyLoginView = UIView()
-        let label = UILabel()
-        label.text = "간편 로그인"
-        label.textColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
-        label.font = UIFont.systemFont(ofSize: 15)
-        easyLoginView.addSubview(label)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            label.leadingAnchor.constraint(equalTo: easyLoginView.leadingAnchor),
-            label.trailingAnchor.constraint(equalTo: easyLoginView.trailingAnchor),
-            label.topAnchor.constraint(equalTo: easyLoginView.topAnchor),
-            label.bottomAnchor.constraint(equalTo: easyLoginView.bottomAnchor)
-        ])
-        return easyLoginView
+    let easyLoginLabel: UILabel = {
+        let easyLoginLabel = UILabel()
+        easyLoginLabel.text = "간편 로그인"
+        easyLoginLabel.textColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        easyLoginLabel.font = UIFont.systemFont(ofSize: 15)
+        return easyLoginLabel
     }()
     
     let easyLoginLine1: UIView = {
@@ -101,21 +95,12 @@ class LoginVC: UIViewController {
         return naverButton
     }()
     
-    let signUpView: UIView = {
-        let signUpView = UIView()
-        let label = UILabel()
-        label.text = "아직 회원이 아니신가요?"
-        label.textColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
-        label.font = UIFont.systemFont(ofSize: 15)
-        signUpView.addSubview(label)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            label.leadingAnchor.constraint(equalTo: signUpView.leadingAnchor),
-            label.trailingAnchor.constraint(equalTo: signUpView.trailingAnchor),
-            label.topAnchor.constraint(equalTo: signUpView.topAnchor),
-            label.bottomAnchor.constraint(equalTo: signUpView.bottomAnchor)
-        ])
-        return signUpView
+    let signUpLabel: UILabel = {
+        let signUpLabel = UILabel()
+        signUpLabel.text = "아직 회원이 아니신가요?"
+        signUpLabel.textColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        signUpLabel.font = UIFont.systemFont(ofSize: 15)
+        return signUpLabel
     }()
     
     let signUpButton: UIButton = {
@@ -127,17 +112,30 @@ class LoginVC: UIViewController {
         return signUpButton
     }()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        handleEditFunc()
+        view.backgroundColor = .white
+        makeSubView()
+        makeConstraint()
+        makeAddTarget()
+    }
+    
+}
+
+extension LoginVC {
+    
     func makeSubView() {
         view.addSubview(logo)
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)
         view.addSubview(findPasswordButton)
-        view.addSubview(easyLoginView)
+        view.addSubview(easyLoginLabel)
         view.addSubview(easyLoginLine1)
         view.addSubview(easyLoginLine2)
         view.addSubview(naverButton)
-        view.addSubview(signUpView)
+        view.addSubview(signUpLabel)
         view.addSubview(signUpButton)
     }
     
@@ -147,11 +145,11 @@ class LoginVC: UIViewController {
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         findPasswordButton.translatesAutoresizingMaskIntoConstraints = false
-        easyLoginView.translatesAutoresizingMaskIntoConstraints = false
+        easyLoginLabel.translatesAutoresizingMaskIntoConstraints = false
         easyLoginLine1.translatesAutoresizingMaskIntoConstraints = false
         easyLoginLine2.translatesAutoresizingMaskIntoConstraints = false
         naverButton.translatesAutoresizingMaskIntoConstraints = false
-        signUpView.translatesAutoresizingMaskIntoConstraints = false
+        signUpLabel.translatesAutoresizingMaskIntoConstraints = false
         signUpButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -181,44 +179,39 @@ class LoginVC: UIViewController {
             findPasswordButton.widthAnchor.constraint(equalToConstant: 180),
             findPasswordButton.heightAnchor.constraint(equalToConstant: 20),
             
-            easyLoginView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            easyLoginView.topAnchor.constraint(equalTo: findPasswordButton.bottomAnchor, constant: 70),
+            easyLoginLabel.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            easyLoginLabel.topAnchor.constraint(equalTo: findPasswordButton.bottomAnchor, constant: 70),
             
             easyLoginLine1.topAnchor.constraint(equalTo: findPasswordButton.bottomAnchor, constant: 80),
-            easyLoginLine1.trailingAnchor.constraint(equalTo: easyLoginView.leadingAnchor, constant: -15),
+            easyLoginLine1.trailingAnchor.constraint(equalTo: easyLoginLabel.leadingAnchor, constant: -10),
             easyLoginLine1.heightAnchor.constraint(equalToConstant: 1),
             easyLoginLine1.widthAnchor.constraint(equalToConstant: 105),
 
             easyLoginLine2.topAnchor.constraint(equalTo: findPasswordButton.bottomAnchor, constant: 80),
-            easyLoginLine2.leadingAnchor.constraint(equalTo: easyLoginView.trailingAnchor, constant: 15),
+            easyLoginLine2.leadingAnchor.constraint(equalTo: easyLoginLabel.trailingAnchor, constant: 10),
             easyLoginLine2.heightAnchor.constraint(equalToConstant: 1),
             easyLoginLine2.widthAnchor.constraint(equalToConstant: 105),
             
-            naverButton.topAnchor.constraint(equalTo: easyLoginView.bottomAnchor, constant: 20),
+            naverButton.topAnchor.constraint(equalTo: easyLoginLabel.bottomAnchor, constant: 20),
             naverButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             naverButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             naverButton.heightAnchor.constraint(equalToConstant: 50),
             
-            signUpView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 80),
-            signUpView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -45),
+            signUpLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 80),
+            signUpLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -45),
             
-            signUpButton.leadingAnchor.constraint(equalTo: signUpView.trailingAnchor),
+            signUpButton.leadingAnchor.constraint(equalTo: signUpLabel.trailingAnchor),
             signUpButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -80),
             signUpButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -39),
         ])
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        handleEditFunc()
-        view.backgroundColor = .white
-        makeSubView()
-        makeConstraint()
-        navigationController?.isNavigationBarHidden = true
+    func makeAddTarget() {
+        self.signUpButton.addTarget(self, action: #selector(goToSignUpVC(_:)), for: .touchUpInside)
     }
     
-}
-
-extension LoginVC {
+    @objc func goToSignUpVC(_: UIButton) {
+        self.navigationController?.pushViewController(SignUpVC(), animated: true)
+    }
     
 }
