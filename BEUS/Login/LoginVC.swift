@@ -36,7 +36,7 @@ class LoginVC: UIViewController {
         return passwordTextField
     }()
     
-    let loginButton : UIButton={
+    let loginButton: UIButton = {
         let loginButton = UIButton()
         var title = AttributedString("로그인")
         title.font = UIFont.boldSystemFont(ofSize: 20)
@@ -50,7 +50,7 @@ class LoginVC: UIViewController {
         return loginButton
     }()
     
-    let findPasswordButton : UIButton = {
+    let findPasswordButton: UIButton = {
         let findPasswordButton =  UIButton()
         findPasswordButton.setTitle("비밀번호를 잊으셨나요?", for: .normal)
         findPasswordButton.setTitleColor(UIColor(hex: "#333333"), for: .normal)
@@ -198,11 +198,11 @@ extension LoginVC {
             naverButton.heightAnchor.constraint(equalToConstant: 50),
             
             signUpLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 80),
-            signUpLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -45),
+            signUpLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -25),
             
             signUpButton.leadingAnchor.constraint(equalTo: signUpLabel.trailingAnchor),
             signUpButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -80),
-            signUpButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -39),
+            signUpButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -19),
         ])
     }
     
