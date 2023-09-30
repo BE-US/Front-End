@@ -9,6 +9,10 @@ import UIKit
 
 class SignUpVC: UIViewController {
     
+    var nickNameValid: Bool = false
+    var emailValid: Bool = false
+    var passwordValid: Bool = false
+    
     let nickNameLabel: UILabel = {
         let nickNameLabel = UILabel()
         nickNameLabel.text = "닉네임"
@@ -248,7 +252,21 @@ extension SignUpVC {
     }
     
     @objc func signUp(_: UIButton) {
-        
+        if nickNameValid != true {
+            showAlert(message: "닉네임을 다시 확인해주세요.")
+            return
+        }
+        if emailValid != true {
+            showAlert(message: "이메일을 다시 확인해주세요.")
+            return
+        }
+        if passwordValid != true {
+            showAlert(message: "비밀번호를 다시 확인해주세요.")
+            return
+        }
+        if let navigationController = navigationController {
+            navigationController.popToRootViewController(animated: false)
+        }
     }
     
 }

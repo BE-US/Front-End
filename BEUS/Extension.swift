@@ -19,6 +19,7 @@ extension UIButton {
 }
 
 extension UIColor {
+    
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
@@ -33,6 +34,7 @@ extension UIColor {
 
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
+    
 }
 
 extension UITextField {
@@ -79,6 +81,24 @@ extension UIViewController {
         let tap : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
+    }
+    
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+        alert.addAction(okAction)
+        
+        // 메시지 폰트 사이즈 설정
+        let attributedMessage = NSMutableAttributedString(string: message)
+        let style = NSMutableParagraphStyle()
+        style.alignment = .center
+        attributedMessage.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: attributedMessage.length))
+        
+        let fontSize: CGFloat = 16
+        attributedMessage.addAttribute(.font, value: UIFont.systemFont(ofSize: fontSize), range: NSRange(location: 0, length: attributedMessage.length))
+        alert.setValue(attributedMessage, forKey: "attributedMessage")
+        
+        present(alert, animated: true, completion: nil)
     }
     
     @objc func handleTap() {
