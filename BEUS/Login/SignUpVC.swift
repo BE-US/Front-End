@@ -134,7 +134,7 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        handleEditFunc()
+        handleEdit()
         view.backgroundColor = .white
         makeSubView()
         makeConstraint()

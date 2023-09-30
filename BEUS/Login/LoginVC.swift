@@ -114,7 +114,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        handleEditFunc()
+        handleEdit()
         view.backgroundColor = .white
         makeSubView()
         makeConstraint()
