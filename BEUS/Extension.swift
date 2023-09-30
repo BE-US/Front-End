@@ -70,7 +70,12 @@ extension UIImage {
 
 extension UIViewController {
     
-    func handleEditFunc(){
+    func setNavigationBar(){
+        self.navigationController?.navigationBar.topItem?.backButtonTitle = ""
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.5215686275, green: 0.8392156863, blue: 0.6509803922, alpha: 1)
+    }
+    
+    func handleEdit(){
         let tap : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)

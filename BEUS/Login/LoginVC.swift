@@ -119,6 +119,7 @@ class LoginVC: UIViewController {
         makeSubView()
         makeConstraint()
         makeAddTarget()
+        setNavigationBar()
     }
     
 }
