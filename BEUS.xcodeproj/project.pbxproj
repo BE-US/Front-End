@@ -12,10 +12,12 @@
 		007F19122AC152BE0022CB24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F19112AC152BE0022CB24 /* ViewController.swift */; };
 		007F19172AC152BE0022CB24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007F19162AC152BE0022CB24 /* Assets.xcassets */; };
 		007F191A2AC152BE0022CB24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007F19182AC152BE0022CB24 /* LaunchScreen.storyboard */; };
-		007F19232AC153170022CB24 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F19222AC153170022CB24 /* LoginVC.swift */; };
+		007F19232AC153170022CB24 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F19222AC153170022CB24 /* SignInVC.swift */; };
 		007F19252AC168990022CB24 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F19242AC168990022CB24 /* Extension.swift */; };
-		00E7BEE02AC57D010046BE3F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7BEDF2AC57D010046BE3F /* SignUpVC.swift */; };
+		00E7BEE02AC57D010046BE3F /* SignUpVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7BEDF2AC57D010046BE3F /* SignUpVC1.swift */; };
 		00E7BEE22AC81B3B0046BE3F /* SignUpSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7BEE12AC81B3B0046BE3F /* SignUpSuccessVC.swift */; };
+		00E7BEE42AC998DF0046BE3F /* SignUpVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7BEE32AC998DF0046BE3F /* SignUpVC2.swift */; };
+		00E7BEE62AC998ED0046BE3F /* SignUpVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7BEE52AC998ED0046BE3F /* SignUpVC3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +28,12 @@
 		007F19162AC152BE0022CB24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007F19192AC152BE0022CB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		007F191B2AC152BE0022CB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		007F19222AC153170022CB24 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		007F19222AC153170022CB24 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		007F19242AC168990022CB24 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		00E7BEDF2AC57D010046BE3F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		00E7BEDF2AC57D010046BE3F /* SignUpVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC1.swift; sourceTree = "<group>"; };
 		00E7BEE12AC81B3B0046BE3F /* SignUpSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessVC.swift; sourceTree = "<group>"; };
+		00E7BEE32AC998DF0046BE3F /* SignUpVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC2.swift; sourceTree = "<group>"; };
+		00E7BEE52AC998ED0046BE3F /* SignUpVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,7 @@
 		007F190C2AC152BE0022CB24 /* BEUS */ = {
 			isa = PBXGroup;
 			children = (
-				007F19212AC153000022CB24 /* Login */,
+				007F19212AC153000022CB24 /* Sign */,
 				007F190D2AC152BE0022CB24 /* AppDelegate.swift */,
 				007F190F2AC152BE0022CB24 /* SceneDelegate.swift */,
 				007F19112AC152BE0022CB24 /* ViewController.swift */,
@@ -74,14 +78,16 @@
 			path = BEUS;
 			sourceTree = "<group>";
 		};
-		007F19212AC153000022CB24 /* Login */ = {
+		007F19212AC153000022CB24 /* Sign */ = {
 			isa = PBXGroup;
 			children = (
-				007F19222AC153170022CB24 /* LoginVC.swift */,
-				00E7BEDF2AC57D010046BE3F /* SignUpVC.swift */,
+				007F19222AC153170022CB24 /* SignInVC.swift */,
+				00E7BEDF2AC57D010046BE3F /* SignUpVC1.swift */,
+				00E7BEE32AC998DF0046BE3F /* SignUpVC2.swift */,
+				00E7BEE52AC998ED0046BE3F /* SignUpVC3.swift */,
 				00E7BEE12AC81B3B0046BE3F /* SignUpSuccessVC.swift */,
 			);
-			path = Login;
+			path = Sign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +163,11 @@
 				007F19252AC168990022CB24 /* Extension.swift in Sources */,
 				007F19122AC152BE0022CB24 /* ViewController.swift in Sources */,
 				007F190E2AC152BE0022CB24 /* AppDelegate.swift in Sources */,
-				007F19232AC153170022CB24 /* LoginVC.swift in Sources */,
+				00E7BEE42AC998DF0046BE3F /* SignUpVC2.swift in Sources */,
+				007F19232AC153170022CB24 /* SignInVC.swift in Sources */,
+				00E7BEE62AC998ED0046BE3F /* SignUpVC3.swift in Sources */,
 				00E7BEE22AC81B3B0046BE3F /* SignUpSuccessVC.swift in Sources */,
-				00E7BEE02AC57D010046BE3F /* SignUpVC.swift in Sources */,
+				00E7BEE02AC57D010046BE3F /* SignUpVC1.swift in Sources */,
 				007F19102AC152BE0022CB24 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -47,7 +47,6 @@ class SignUpSuccessVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        handleEdit()
         view.backgroundColor = .white
         makeSubView()
         makeConstraint()
@@ -96,10 +95,10 @@ extension SignUpSuccessVC {
     }
     
     func makeAddTarget() {
-        self.startButton.addTarget(self, action: #selector(goToLoginVC(_:)), for: .touchUpInside)
+        self.startButton.addTarget(self, action: #selector(goToSignInVC(_:)), for: .touchUpInside)
     }
     
-    @objc func goToLoginVC(_: UIButton) {
+    @objc func goToSignInVC(_: UIButton) {
         if let navigationController = navigationController {
             navigationController.popToRootViewController(animated: false)
         }
