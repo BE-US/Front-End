@@ -9,9 +9,9 @@ import UIKit
 
 class SignUpVC: UIViewController {
     
-    var nickNameValid: Bool = false
-    var emailValid: Bool = false
-    var passwordValid: Bool = false
+    var nickNameValid: Bool = true
+    var emailValid: Bool = true
+    var passwordValid: Bool = true
     
     let nickNameLabel: UILabel = {
         let nickNameLabel = UILabel()
@@ -143,6 +143,7 @@ class SignUpVC: UIViewController {
         makeSubView()
         makeConstraint()
         makeAddTarget()
+        navigationController?.isNavigationBarHidden = false
     }
 }
 
@@ -264,9 +265,7 @@ extension SignUpVC {
             showAlert(message: "비밀번호를 다시 확인해주세요.")
             return
         }
-        if let navigationController = navigationController {
-            navigationController.popToRootViewController(animated: false)
-        }
+        self.navigationController?.pushViewController(SignUpSuccessVC(), animated: true)
     }
     
 }
