@@ -209,10 +209,36 @@ extension LoginVC {
     
     func makeAddTarget() {
         self.signUpButton.addTarget(self, action: #selector(goToSignUpVC(_:)), for: .touchUpInside)
+        self.loginButton.addTarget(self, action: #selector(login(_:)), for: .touchUpInside)
+    }
+    
+    func emailValid() -> Bool {
+        if emailTextField.text != "" && emailTextField.text!.contains("@") {
+            return true
+        }
+        return false
+    }
+    
+    func passwordValid() -> Bool {
+        if passwordTextField.text != "" {
+            return true
+        }
+        return false
     }
     
     @objc func goToSignUpVC(_: UIButton) {
         self.navigationController?.pushViewController(SignUpVC(), animated: true)
+    }
+    
+    @objc func login(_: UIButton) {
+        if !emailValid() {
+            showAlert(message: "이메일을 다시 확인해주세요.")
+            return
+        }
+        if !passwordValid() {
+            showAlert(message: "비밀번호를 다시 확인해주세요.")
+            return
+        }
     }
     
 }
