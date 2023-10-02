@@ -9,8 +9,6 @@ import UIKit
 
 class SignUpVC3: UIViewController {
     
-    var passwordValid: Bool = true
-    
     let passwordLabel: UILabel = {
         let passwordLabel = UILabel()
         passwordLabel.text = "비밀번호"
@@ -20,7 +18,7 @@ class SignUpVC3: UIViewController {
     
     let passwordTextField: UITextField = {
         let passwordTextField = UITextField()
-        passwordTextField.placeholder = "비밀번호를 입력해주세요."
+        passwordTextField.placeholder = "비밀번호()를 입력해주세요. (8~12자)"
         passwordTextField.backgroundColor = .systemGray6
         passwordTextField.layer.cornerRadius = 20
         passwordTextField.clearButtonMode = .whileEditing
@@ -104,8 +102,16 @@ extension SignUpVC3 {
         self.signUpButton.addTarget(self, action: #selector(signUp(_:)), for: .touchUpInside)
     }
     
+    func passwordValid() -> Bool {
+        if passwordTextField.text != "" && passwordTextField.text!.count >= 8 && passwordTextField.text!.count <= 12 && passwordTextField.text == passwordCheckTextField.text {
+            UserDefaults.standard.set(passwordTextField.text, forKey: "Password")
+            return true
+        }
+        return false
+    }
+    
     @objc func signUp(_: UIButton) {
-        if passwordValid != true {
+        if passwordValid() != true {
             showAlert(message: "비밀번호를 다시 확인해주세요.")
             return
         }
