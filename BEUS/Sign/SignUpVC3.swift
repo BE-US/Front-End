@@ -18,7 +18,7 @@ class SignUpVC3: UIViewController {
     
     let passwordTextField: UITextField = {
         let passwordTextField = UITextField()
-        passwordTextField.placeholder = "비밀번호()를 입력해주세요. (8~12자)"
+        passwordTextField.placeholder = "비밀번호를 입력해주세요. (8~12자)"
         passwordTextField.backgroundColor = .systemGray6
         passwordTextField.layer.cornerRadius = 20
         passwordTextField.clearButtonMode = .whileEditing
