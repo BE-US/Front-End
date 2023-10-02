@@ -103,6 +103,7 @@ class SignUpVC2: UIViewController {
         super.viewDidLoad()
         handleEdit()
         view.backgroundColor = .white
+        self.title = "회원가입(2/3)"
         makeSubView()
         makeConstraint()
         makeAddTarget()

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007010222ACABDB800FD6736 /* ChangePasswordVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */; };
+		007010242ACABE1D00FD6736 /* ChangePasswordVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */; };
+		007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */; };
 		007F190E2AC152BE0022CB24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F190D2AC152BE0022CB24 /* AppDelegate.swift */; };
 		007F19102AC152BE0022CB24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F190F2AC152BE0022CB24 /* SceneDelegate.swift */; };
 		007F19122AC152BE0022CB24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F19112AC152BE0022CB24 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC1.swift; sourceTree = "<group>"; };
+		007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC2.swift; sourceTree = "<group>"; };
+		007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordSuccessVC.swift; sourceTree = "<group>"; };
 		007F190A2AC152BE0022CB24 /* BEUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BEUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007F190D2AC152BE0022CB24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		007F190F2AC152BE0022CB24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 				00E7BEE32AC998DF0046BE3F /* SignUpVC2.swift */,
 				00E7BEE52AC998ED0046BE3F /* SignUpVC3.swift */,
 				00E7BEE12AC81B3B0046BE3F /* SignUpSuccessVC.swift */,
+				007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */,
+				007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */,
+				007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */,
 			);
 			path = Sign;
 			sourceTree = "<group>";
@@ -160,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */,
 				007F19252AC168990022CB24 /* Extension.swift in Sources */,
 				007F19122AC152BE0022CB24 /* ViewController.swift in Sources */,
+				007010242ACABE1D00FD6736 /* ChangePasswordVC2.swift in Sources */,
+				007010222ACABDB800FD6736 /* ChangePasswordVC1.swift in Sources */,
 				007F190E2AC152BE0022CB24 /* AppDelegate.swift in Sources */,
 				00E7BEE42AC998DF0046BE3F /* SignUpVC2.swift in Sources */,
 				007F19232AC153170022CB24 /* SignInVC.swift in Sources */,

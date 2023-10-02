@@ -51,13 +51,13 @@ class SignInVC: UIViewController {
         return signInButton
     }()
     
-    let findPasswordButton: UIButton = {
-        let findPasswordButton =  UIButton()
-        findPasswordButton.setTitle("비밀번호를 잊으셨나요?", for: .normal)
-        findPasswordButton.setTitleColor(UIColor(hex: "#333333"), for: .normal)
-        findPasswordButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        findPasswordButton.setUnderLine()
-        return findPasswordButton
+    let changePasswordButton: UIButton = {
+        let changePasswordButton =  UIButton()
+        changePasswordButton.setTitle("비밀번호를 잊으셨나요?", for: .normal)
+        changePasswordButton.setTitleColor(UIColor(hex: "#333333"), for: .normal)
+        changePasswordButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        changePasswordButton.setUnderLine()
+        return changePasswordButton
     }()
     
     let easySignInLabel: UILabel = {
@@ -132,7 +132,7 @@ extension SignInVC {
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(signInButton)
-        view.addSubview(findPasswordButton)
+        view.addSubview(changePasswordButton)
         view.addSubview(easySignInLabel)
         view.addSubview(easySignInLine1)
         view.addSubview(easySignInLine2)
@@ -146,7 +146,7 @@ extension SignInVC {
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         signInButton.translatesAutoresizingMaskIntoConstraints = false
-        findPasswordButton.translatesAutoresizingMaskIntoConstraints = false
+        changePasswordButton.translatesAutoresizingMaskIntoConstraints = false
         easySignInLabel.translatesAutoresizingMaskIntoConstraints = false
         easySignInLine1.translatesAutoresizingMaskIntoConstraints = false
         easySignInLine2.translatesAutoresizingMaskIntoConstraints = false
@@ -176,20 +176,20 @@ extension SignInVC {
             signInButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             signInButton.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
             
-            findPasswordButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 30),
-            findPasswordButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            findPasswordButton.widthAnchor.constraint(equalToConstant: 180),
-            findPasswordButton.heightAnchor.constraint(equalToConstant: 20),
+            changePasswordButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 30),
+            changePasswordButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            changePasswordButton.widthAnchor.constraint(equalToConstant: 180),
+            changePasswordButton.heightAnchor.constraint(equalToConstant: 20),
             
             easySignInLabel.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            easySignInLabel.topAnchor.constraint(equalTo: findPasswordButton.bottomAnchor, constant: 70),
+            easySignInLabel.topAnchor.constraint(equalTo: changePasswordButton.bottomAnchor, constant: 70),
             
-            easySignInLine1.topAnchor.constraint(equalTo: findPasswordButton.bottomAnchor, constant: 80),
+            easySignInLine1.topAnchor.constraint(equalTo: changePasswordButton.bottomAnchor, constant: 80),
             easySignInLine1.trailingAnchor.constraint(equalTo: easySignInLabel.leadingAnchor, constant: -10),
             easySignInLine1.heightAnchor.constraint(equalToConstant: 1),
             easySignInLine1.widthAnchor.constraint(equalToConstant: 105),
 
-            easySignInLine2.topAnchor.constraint(equalTo: findPasswordButton.bottomAnchor, constant: 80),
+            easySignInLine2.topAnchor.constraint(equalTo: changePasswordButton.bottomAnchor, constant: 80),
             easySignInLine2.leadingAnchor.constraint(equalTo: easySignInLabel.trailingAnchor, constant: 10),
             easySignInLine2.heightAnchor.constraint(equalToConstant: 1),
             easySignInLine2.widthAnchor.constraint(equalToConstant: 105),
@@ -209,7 +209,8 @@ extension SignInVC {
     }
     
     func makeAddTarget() {
-        self.signUpButton.addTarget(self, action: #selector(goToSignUpVC(_:)), for: .touchUpInside)
+        self.changePasswordButton.addTarget(self, action: #selector(goToChangePasswordVC1(_:)), for: .touchUpInside)
+        self.signUpButton.addTarget(self, action: #selector(goToSignUpVC1(_:)), for: .touchUpInside)
         self.signInButton.addTarget(self, action: #selector(signIn(_:)), for: .touchUpInside)
     }
     
@@ -227,7 +228,11 @@ extension SignInVC {
         return false
     }
     
-    @objc func goToSignUpVC(_: UIButton) {
+    @objc func goToChangePasswordVC1(_: UIButton) {
+        self.navigationController?.pushViewController(ChangePasswordVC1(), animated: true)
+    }
+    
+    @objc func goToSignUpVC1(_: UIButton) {
         self.navigationController?.pushViewController(SignUpVC1(), animated: true)
     }
     

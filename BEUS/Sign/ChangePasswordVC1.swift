@@ -1,13 +1,13 @@
 //
-//  SignUpVC1.swift
+//  FindPassword1VC1.swift
 //  BEUS
 //
-//  Created by 티모시 킴 on 9/28/23.
+//  Created by 티모시 킴 on 10/2/23.
 //
 
 import UIKit
 
-class SignUpVC1: UIViewController {
+class ChangePasswordVC1: UIViewController {
     
     var emailValid: Bool = true
     
@@ -20,7 +20,7 @@ class SignUpVC1: UIViewController {
     
     let emailTextField: UITextField = {
         let emailTextField = UITextField()
-        emailTextField.placeholder = "사용할 이메일을 입력해주세요."
+        emailTextField.placeholder = "가입했던 이메일을 입력해주세요."
         emailTextField.backgroundColor = .systemGray6
         emailTextField.layer.cornerRadius = 20
         emailTextField.clearButtonMode = .whileEditing
@@ -80,7 +80,7 @@ class SignUpVC1: UIViewController {
         super.viewDidLoad()
         handleEdit()
         view.backgroundColor = .white
-        self.title = "회원가입(1/3)"
+        self.title = "비밀번호 변경(1/2)"
         makeSubView()
         makeConstraint()
         makeAddTarget()
@@ -89,7 +89,7 @@ class SignUpVC1: UIViewController {
     }
 }
 
-extension SignUpVC1 {
+extension ChangePasswordVC1 {
     
     func makeSubView() {
         view.addSubview(emailLabel)
@@ -157,7 +157,7 @@ extension SignUpVC1 {
             showAlert(message: "이메일을 다시 확인해주세요.")
             return
         }
-        self.navigationController?.pushViewController(SignUpVC2(), animated: true)
+        self.navigationController?.pushViewController(ChangePasswordVC2(), animated: true)
     }
     
 }

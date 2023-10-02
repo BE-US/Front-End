@@ -1,13 +1,13 @@
 //
-//  SignUpVC3.swift
+//  FindPasswordVC2.swift
 //  BEUS
 //
-//  Created by 티모시 킴 on 10/1/23.
+//  Created by 티모시 킴 on 10/2/23.
 //
 
 import UIKit
 
-class SignUpVC3: UIViewController {
+class ChangePasswordVC2: UIViewController {
     
     let passwordLabel: UILabel = {
         let passwordLabel = UILabel()
@@ -38,24 +38,24 @@ class SignUpVC3: UIViewController {
         return passwordCheckTextField
     }()
     
-    let signUpButton: UIButton = {
-        let signUpButton = UIButton()
+    let changePasswordButton: UIButton = {
+        let changePasswordButton = UIButton()
         var title = AttributedString("가입하기")
         title.font = UIFont.boldSystemFont(ofSize: 20)
         var config = UIButton.Configuration.filled()
         config.baseBackgroundColor = #colorLiteral(red: 0.582869947, green: 0.8610628247, blue: 0.7095094323, alpha: 1)
         config.cornerStyle = .capsule
         config.attributedTitle = title
-        signUpButton.tintColor = .white
-        signUpButton.configuration = config
-        return signUpButton
+        changePasswordButton.tintColor = .white
+        changePasswordButton.configuration = config
+        return changePasswordButton
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         handleEdit()
         view.backgroundColor = .white
-        self.title = "회원가입(3/3)"
+        self.title = "비밀번호 변경(2/2)"
         makeSubView()
         makeConstraint()
         makeAddTarget()
@@ -63,20 +63,20 @@ class SignUpVC3: UIViewController {
     }
 }
 
-extension SignUpVC3 {
+extension ChangePasswordVC2 {
     
     func makeSubView() {
         view.addSubview(passwordLabel)
         view.addSubview(passwordTextField)
         view.addSubview(passwordCheckTextField)
-        view.addSubview(signUpButton)
+        view.addSubview(changePasswordButton)
     }
     
     func makeConstraint() {
         passwordLabel.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordCheckTextField.translatesAutoresizingMaskIntoConstraints = false
-        signUpButton.translatesAutoresizingMaskIntoConstraints = false
+        changePasswordButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             passwordLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -92,15 +92,15 @@ extension SignUpVC3 {
             passwordCheckTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             passwordCheckTextField.heightAnchor.constraint(equalToConstant: 45),
             
-            signUpButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
-            signUpButton.heightAnchor.constraint(equalToConstant: 50),
-            signUpButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-            signUpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30)
+            changePasswordButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
+            changePasswordButton.heightAnchor.constraint(equalToConstant: 50),
+            changePasswordButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+            changePasswordButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30)
         ])
     }
     
     func makeAddTarget() {
-        self.signUpButton.addTarget(self, action: #selector(signUp(_:)), for: .touchUpInside)
+        self.changePasswordButton.addTarget(self, action: #selector(changePassword(_:)), for: .touchUpInside)
     }
     
     func passwordValid() -> Bool {
@@ -111,12 +111,12 @@ extension SignUpVC3 {
         return false
     }
     
-    @objc func signUp(_: UIButton) {
+    @objc func changePassword(_: UIButton) {
         if passwordValid() != true {
             showAlert(message: "비밀번호를 다시 확인해주세요.")
             return
         }
-        self.navigationController?.pushViewController(SignUpSuccessVC(), animated: true)
+        self.navigationController?.pushViewController(ChangePasswordSuccessVC(), animated: true)
     }
     
 }
