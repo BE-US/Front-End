@@ -20,8 +20,8 @@ class TabBarController: UITabBarController {
         self.viewControllers = [homeVC, myVideosVC, communityVC, myPageVC]
         
         if let items = self.tabBar.items {
-            items[0].image = UIImage(named: "Home")?.resizeImageTo(size: CGSize(width: 35, height: 35))
-            items[1].image = UIImage(named: "MyVideos")?.resizeImageTo(size: CGSize(width: 35, height: 35))
+            items[0].image = UIImage(named: "Home")?.resizeImageTo(size: CGSize(width: 28, height: 28))
+            items[1].image = UIImage(named: "MyVideos")?.resizeImageTo(size: CGSize(width: 25, height: 25))
             items[2].image = UIImage(named: "Community")?.resizeImageTo(size: CGSize(width: 35, height: 35))
             items[3].image = UIImage(named: "MyPage")?.resizeImageTo(size: CGSize(width: 35, height: 35))
             
