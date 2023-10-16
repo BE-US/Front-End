@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004E82172ADC3A0D008229AB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E82162ADC3A0D008229AB /* TabBarController.swift */; };
+		004E821D2ADC3C81008229AB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E821C2ADC3C81008229AB /* HomeVC.swift */; };
+		004E821F2ADC3CD9008229AB /* MyVideosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E821E2ADC3CD9008229AB /* MyVideosVC.swift */; };
+		004E82212ADC3CF0008229AB /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E82202ADC3CF0008229AB /* CommunityVC.swift */; };
+		004E82252ADC4878008229AB /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E82242ADC4878008229AB /* MyPageVC.swift */; };
 		007010222ACABDB800FD6736 /* ChangePasswordVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */; };
 		007010242ACABE1D00FD6736 /* ChangePasswordVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */; };
 		007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		004E82162ADC3A0D008229AB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = BEUS/TabBarController.swift; sourceTree = SOURCE_ROOT; };
+		004E821C2ADC3C81008229AB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		004E821E2ADC3CD9008229AB /* MyVideosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideosVC.swift; sourceTree = "<group>"; };
+		004E82202ADC3CF0008229AB /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
+		004E82242ADC4878008229AB /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC1.swift; sourceTree = "<group>"; };
 		007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC2.swift; sourceTree = "<group>"; };
 		007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordSuccessVC.swift; sourceTree = "<group>"; };
@@ -53,6 +63,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004E82182ADC3B8C008229AB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				004E821C2ADC3C81008229AB /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		004E82192ADC3B94008229AB /* MyVideos */ = {
+			isa = PBXGroup;
+			children = (
+				004E821E2ADC3CD9008229AB /* MyVideosVC.swift */,
+			);
+			path = MyVideos;
+			sourceTree = "<group>";
+		};
+		004E821A2ADC3C12008229AB /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				004E82202ADC3CF0008229AB /* CommunityVC.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		004E821B2ADC3C22008229AB /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				004E82242ADC4878008229AB /* MyPageVC.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		007F19012AC152BE0022CB24 = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +115,14 @@
 			isa = PBXGroup;
 			children = (
 				007F19212AC153000022CB24 /* Sign */,
+				004E82182ADC3B8C008229AB /* Home */,
+				004E82192ADC3B94008229AB /* MyVideos */,
+				004E821A2ADC3C12008229AB /* Community */,
+				004E821B2ADC3C22008229AB /* MyPage */,
 				007F190D2AC152BE0022CB24 /* AppDelegate.swift */,
 				007F190F2AC152BE0022CB24 /* SceneDelegate.swift */,
 				007F19112AC152BE0022CB24 /* ViewController.swift */,
+				004E82162ADC3A0D008229AB /* TabBarController.swift */,
 				007F19162AC152BE0022CB24 /* Assets.xcassets */,
 				007F19182AC152BE0022CB24 /* LaunchScreen.storyboard */,
 				007F191B2AC152BE0022CB24 /* Info.plist */,
@@ -169,7 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004E82252ADC4878008229AB /* MyPageVC.swift in Sources */,
 				007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */,
+				004E821D2ADC3C81008229AB /* HomeVC.swift in Sources */,
+				004E82172ADC3A0D008229AB /* TabBarController.swift in Sources */,
 				007F19252AC168990022CB24 /* Extension.swift in Sources */,
 				007F19122AC152BE0022CB24 /* ViewController.swift in Sources */,
 				007010242ACABE1D00FD6736 /* ChangePasswordVC2.swift in Sources */,
@@ -177,10 +227,12 @@
 				007F190E2AC152BE0022CB24 /* AppDelegate.swift in Sources */,
 				00E7BEE42AC998DF0046BE3F /* SignUpVC2.swift in Sources */,
 				007F19232AC153170022CB24 /* SignInVC.swift in Sources */,
+				004E82212ADC3CF0008229AB /* CommunityVC.swift in Sources */,
 				00E7BEE62AC998ED0046BE3F /* SignUpVC3.swift in Sources */,
 				00E7BEE22AC81B3B0046BE3F /* SignUpSuccessVC.swift in Sources */,
 				00E7BEE02AC57D010046BE3F /* SignUpVC1.swift in Sources */,
 				007F19102AC152BE0022CB24 /* SceneDelegate.swift in Sources */,
+				004E821F2ADC3CD9008229AB /* MyVideosVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

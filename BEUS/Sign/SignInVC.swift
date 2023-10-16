@@ -245,6 +245,9 @@ extension SignInVC {
             showAlert(message: "비밀번호를 다시 확인해주세요.")
             return
         }
+        let tabBarController = TabBarController()
+        tabBarController.modalPresentationStyle = .fullScreen
+        self.present(tabBarController, animated: true, completion: nil)
     }
     
 }
