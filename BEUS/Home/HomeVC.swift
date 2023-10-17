@@ -33,6 +33,35 @@ class HomeVC: UIViewController {
         return questionLabel
     }()
     
+    let categoryStackView: UIStackView = {
+        let categoryStackView = UIStackView()
+        categoryStackView.axis = .vertical
+        categoryStackView.spacing = 10
+        categoryStackView.distribution = .fillEqually
+        var category = [["축구", "야구", "농구"],
+                        ["골프", "테니스", "배드민턴"],
+                        ["탁구", "배구", "수영"],
+                        ["볼링", "당구", "럭비"],
+                        ["육상", "핸드볼", "하키"]]
+        for i in 0..<5 {
+            let rowStackView = UIStackView()
+            rowStackView.axis = .horizontal
+            rowStackView.distribution = .fillEqually
+            rowStackView.spacing = 10
+            for j in 0..<3 {
+                let button = UIButton(type: .system)
+                button.setTitle(category[i][j], for: .normal)
+                button.setTitleColor(UIColor(hex: "#979797"), for: .normal)
+                button.layer.borderColor = #colorLiteral(red: 0.8797428012, green: 0.8797428012, blue: 0.8797428012, alpha: 1)
+                button.layer.borderWidth = 1.0
+                button.addTarget(self, action: #selector(categoryButtonTapped(_:)), for: .touchUpInside)
+                rowStackView.addArrangedSubview(button)
+            }
+            categoryStackView.addArrangedSubview(rowStackView)
+        }
+        return categoryStackView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -51,7 +80,7 @@ extension HomeVC {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
-        [gradationBackground, questionLabel].forEach {
+        [gradationBackground, questionLabel, categoryStackView].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview($0)
         }
@@ -83,6 +112,16 @@ extension HomeVC {
             questionLabel.topAnchor.constraint(equalTo: gradationBackground.bottomAnchor, constant: 40),
             questionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30)
         ])
+        
+        NSLayoutConstraint.activate([
+            categoryStackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 40),
+            categoryStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30),
+            categoryStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -30),
+            categoryStackView.heightAnchor.constraint(equalToConstant: 300)
+        ])
+    }
+    
+    @objc func categoryButtonTapped(_ sender: UIButton) {
     }
     
 }
