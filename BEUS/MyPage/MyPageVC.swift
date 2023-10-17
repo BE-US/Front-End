@@ -30,7 +30,12 @@ class MyPageVC: UIViewController {
         let gradationBackground = UIImageView(image: UIImage(named: "GradationBackground"))
         return gradationBackground
     }()
-
+    
+    let profileImageView: UIImageView = {
+        let profileImageView = UIImageView(image: UIImage(named: "ProfileImageExample"))
+        return profileImageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -38,7 +43,7 @@ class MyPageVC: UIViewController {
         navigationItem.rightBarButtonItem = settingButton
         setLayout()
     }
-
+    
 }
 
 extension MyPageVC {
@@ -50,7 +55,7 @@ extension MyPageVC {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
-        [gradationBackground].forEach {
+        [gradationBackground, profileImageView].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview($0)
         }
@@ -76,6 +81,13 @@ extension MyPageVC {
             gradationBackground.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             gradationBackground.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             gradationBackground.heightAnchor.constraint(equalToConstant: 200)
+        ])
+        
+        NSLayoutConstraint.activate([
+            profileImageView.centerXAnchor.constraint(equalTo: gradationBackground.centerXAnchor),
+            profileImageView.centerYAnchor.constraint(equalTo: gradationBackground.bottomAnchor),
+            profileImageView.widthAnchor.constraint(equalToConstant: 100),
+            profileImageView.heightAnchor.constraint(equalToConstant: 100)
         ])
     }
     
