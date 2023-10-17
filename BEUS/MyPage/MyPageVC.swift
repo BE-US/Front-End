@@ -9,6 +9,12 @@ import UIKit
 
 class MyPageVC: UIViewController {
     
+    let settingButton: UIBarButtonItem = {
+        let settingButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(goToSettingVC(_:)))
+        settingButton.tintColor = .black
+        return settingButton
+    }()
+    
     let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.contentInsetAdjustmentBehavior = .never
@@ -29,6 +35,7 @@ class MyPageVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.navigationController?.navigationBar.topItem?.title = "내 페이지"
+        navigationItem.rightBarButtonItem = settingButton
         setLayout()
     }
 
@@ -70,6 +77,9 @@ extension MyPageVC {
             gradationBackground.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             gradationBackground.heightAnchor.constraint(equalToConstant: 200)
         ])
+    }
+    
+    @objc func goToSettingVC(_: UIBarButtonItem) {
         
     }
     
