@@ -47,7 +47,7 @@ class HomeVC: UIViewController {
             let rowStackView = UIStackView()
             rowStackView.axis = .horizontal
             rowStackView.distribution = .fillEqually
-            rowStackView.spacing = 10
+            rowStackView.spacing = 7
             for j in 0..<3 {
                 let button = UIButton(type: .system)
                 button.setTitle(category[i][j], for: .normal)
@@ -60,6 +60,11 @@ class HomeVC: UIViewController {
             categoryStackView.addArrangedSubview(rowStackView)
         }
         return categoryStackView
+    }()
+    
+    let advertisement: UIImageView = {
+        let Advertisement = UIImageView(image: UIImage(named: "Ad"))
+        return Advertisement
     }()
     
     override func viewDidLoad() {
@@ -80,7 +85,7 @@ extension HomeVC {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
-        [gradationBackground, questionLabel, categoryStackView].forEach {
+        [gradationBackground, questionLabel, categoryStackView, advertisement].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview($0)
         }
@@ -97,7 +102,7 @@ extension HomeVC {
             contentView.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
-            contentView.heightAnchor.constraint(equalToConstant: 1000),
+            contentView.heightAnchor.constraint(equalToConstant: 850),
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ])
         
@@ -114,10 +119,17 @@ extension HomeVC {
         ])
         
         NSLayoutConstraint.activate([
-            categoryStackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 40),
+            categoryStackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 30),
             categoryStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30),
             categoryStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -30),
-            categoryStackView.heightAnchor.constraint(equalToConstant: 300)
+            categoryStackView.heightAnchor.constraint(equalToConstant: 230)
+        ])
+        
+        NSLayoutConstraint.activate([
+            advertisement.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -83),
+            advertisement.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            advertisement.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            advertisement.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
     
