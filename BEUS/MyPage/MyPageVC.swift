@@ -36,6 +36,14 @@ class MyPageVC: UIViewController {
         return profileImageView
     }()
     
+    let nameLabel: UILabel = {
+        let nameLabel = UILabel()
+        nameLabel.text = "Taeri"
+        nameLabel.textColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        return nameLabel
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -55,7 +63,7 @@ extension MyPageVC {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
-        [gradationBackground, profileImageView].forEach {
+        [gradationBackground, profileImageView, nameLabel].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview($0)
         }
@@ -88,6 +96,11 @@ extension MyPageVC {
             profileImageView.centerYAnchor.constraint(equalTo: gradationBackground.bottomAnchor),
             profileImageView.widthAnchor.constraint(equalToConstant: 100),
             profileImageView.heightAnchor.constraint(equalToConstant: 100)
+        ])
+        
+        NSLayoutConstraint.activate([
+            nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
+            nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
     
