@@ -44,6 +44,19 @@ class MyPageVC: UIViewController {
         return nameLabel
     }()
     
+    let editProfileButton: UIButton = {
+        let editProfileButton = UIButton()
+        editProfileButton.setTitle("편집", for: .normal)
+        editProfileButton.setTitleColor(UIColor(hex: "#C2C2C2"), for: .normal)
+        editProfileButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        editProfileButton.setImage(UIImage(systemName: "chevron.right"), for: .normal)
+        editProfileButton.imageView?.contentMode = .scaleAspectFit
+        editProfileButton.tintColor = #colorLiteral(red: 0.8044065833, green: 0.8044064641, blue: 0.8044064641, alpha: 1)
+        editProfileButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 39, bottom: 0, right: 0)
+        return editProfileButton
+    }()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -63,7 +76,7 @@ extension MyPageVC {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
-        [gradationBackground, profileImageView, nameLabel].forEach {
+        [gradationBackground, profileImageView, nameLabel, editProfileButton].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview($0)
         }
@@ -101,6 +114,11 @@ extension MyPageVC {
         NSLayoutConstraint.activate([
             nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
             nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            editProfileButton.topAnchor.constraint(equalTo: nameLabel.bottomAnchor),
+            editProfileButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
     
