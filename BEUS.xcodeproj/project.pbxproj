@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00420E2C2B0AFD2E005DA91E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 00420E2B2B0AFD2E005DA91E /* SnapKit */; };
+		00420E2E2B0AFD2E005DA91E /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 00420E2D2B0AFD2E005DA91E /* SnapKit-Dynamic */; };
+		00420E312B0AFD36005DA91E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 00420E302B0AFD36005DA91E /* Then */; };
+		00420E342B0AFF19005DA91E /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 00420E332B0AFF19005DA91E /* Tabman */; };
+		00420E362B0B0209005DA91E /* CommunitySportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00420E352B0B0209005DA91E /* CommunitySportsVC.swift */; };
 		004E82172ADC3A0D008229AB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E82162ADC3A0D008229AB /* TabBarController.swift */; };
 		004E821D2ADC3C81008229AB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E821C2ADC3C81008229AB /* HomeVC.swift */; };
 		004E821F2ADC3CD9008229AB /* MyVideosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E821E2ADC3CD9008229AB /* MyVideosVC.swift */; };
@@ -29,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00420E352B0B0209005DA91E /* CommunitySportsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitySportsVC.swift; sourceTree = "<group>"; };
 		004E82162ADC3A0D008229AB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = BEUS/TabBarController.swift; sourceTree = SOURCE_ROOT; };
 		004E821C2ADC3C81008229AB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		004E821E2ADC3CD9008229AB /* MyVideosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideosVC.swift; sourceTree = "<group>"; };
@@ -57,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00420E2C2B0AFD2E005DA91E /* SnapKit in Frameworks */,
+				00420E342B0AFF19005DA91E /* Tabman in Frameworks */,
+				00420E312B0AFD36005DA91E /* Then in Frameworks */,
+				00420E2E2B0AFD2E005DA91E /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				004E82202ADC3CF0008229AB /* CommunityVC.swift */,
+				00420E352B0B0209005DA91E /* CommunitySportsVC.swift */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -162,6 +173,12 @@
 			dependencies = (
 			);
 			name = BEUS;
+			packageProductDependencies = (
+				00420E2B2B0AFD2E005DA91E /* SnapKit */,
+				00420E2D2B0AFD2E005DA91E /* SnapKit-Dynamic */,
+				00420E302B0AFD36005DA91E /* Then */,
+				00420E332B0AFF19005DA91E /* Tabman */,
+			);
 			productName = BEUS;
 			productReference = 007F190A2AC152BE0022CB24 /* BEUS.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +207,11 @@
 				Base,
 			);
 			mainGroup = 007F19012AC152BE0022CB24;
+			packageReferences = (
+				00420E2A2B0AFD2E005DA91E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				00420E2F2B0AFD36005DA91E /* XCRemoteSwiftPackageReference "Then" */,
+				00420E322B0AFF19005DA91E /* XCRemoteSwiftPackageReference "Tabman" */,
+			);
 			productRefGroup = 007F190B2AC152BE0022CB24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,6 +249,7 @@
 				007F190E2AC152BE0022CB24 /* AppDelegate.swift in Sources */,
 				00E7BEE42AC998DF0046BE3F /* SignUpVC2.swift in Sources */,
 				007F19232AC153170022CB24 /* SignInVC.swift in Sources */,
+				00420E362B0B0209005DA91E /* CommunitySportsVC.swift in Sources */,
 				004E82212ADC3CF0008229AB /* CommunityVC.swift in Sources */,
 				00E7BEE62AC998ED0046BE3F /* SignUpVC3.swift in Sources */,
 				00E7BEE22AC81B3B0046BE3F /* SignUpSuccessVC.swift in Sources */,
@@ -438,6 +461,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00420E2A2B0AFD2E005DA91E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		00420E2F2B0AFD36005DA91E /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		00420E322B0AFF19005DA91E /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00420E2B2B0AFD2E005DA91E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00420E2A2B0AFD2E005DA91E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		00420E2D2B0AFD2E005DA91E /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00420E2A2B0AFD2E005DA91E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		00420E302B0AFD36005DA91E /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00420E2F2B0AFD36005DA91E /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		00420E332B0AFF19005DA91E /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00420E322B0AFF19005DA91E /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 007F19022AC152BE0022CB24 /* Project object */;
 }
