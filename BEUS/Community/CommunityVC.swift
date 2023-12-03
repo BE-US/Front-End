@@ -12,6 +12,8 @@ import Then
 
 class CommunityVC: UIViewController {
     
+    var posts: [CustomPost] = customPostList
+    
     private let tableView = UITableView(frame: .zero, style: .plain)
     
     override func viewDidLoad() {
@@ -53,18 +55,16 @@ extension CommunityVC {
                                 forCellReuseIdentifier: PostTVC.identifier)
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.rowHeight = UITableView.automaticDimension
     }
     
 }
 
 extension CommunityVC: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let postVC = PostVC()
+        postVC.customPost = posts[indexPath.row]
         self.navigationController?.pushViewController(postVC, animated: true)
     }
     
@@ -74,12 +74,23 @@ extension CommunityVC: UITableViewDelegate {
 extension CommunityVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTVC.identifier,
                                                        for: indexPath) as? PostTVC else {return UITableViewCell()}
+        let post = posts[indexPath.row]
+        
+        if post.postImage.count != 0 {
+            cell.bindData(model: post)
+            cell.setUI2()
+            cell.postImageView.image = post.postImage[0]
+        } else {
+            cell.bindData(model: post)
+            cell.setUI1()
+        }
+        
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
         return cell

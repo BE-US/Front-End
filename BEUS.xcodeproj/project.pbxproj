@@ -18,6 +18,10 @@
 		004E82252ADC4878008229AB /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E82242ADC4878008229AB /* MyPageVC.swift */; };
 		005AFD482B1CB00C0001A034 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD472B1CB00C0001A034 /* PostVC.swift */; };
 		005AFD502B1CBD170001A034 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD4F2B1CBD170001A034 /* PostTVC.swift */; };
+		005AFD542B1CC4F90001A034 /* CustomPostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD532B1CC4F90001A034 /* CustomPostTVC.swift */; };
+		005AFD562B1CC5060001A034 /* CustomCommentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD552B1CC5060001A034 /* CustomCommentTVC.swift */; };
+		005AFD582B1CEB670001A034 /* CustomPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD572B1CEB670001A034 /* CustomPost.swift */; };
+		005AFD5A2B1CF52C0001A034 /* CustomComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD592B1CF52C0001A034 /* CustomComment.swift */; };
 		007010222ACABDB800FD6736 /* ChangePasswordVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */; };
 		007010242ACABE1D00FD6736 /* ChangePasswordVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */; };
 		007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */; };
@@ -42,6 +46,10 @@
 		004E82242ADC4878008229AB /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		005AFD472B1CB00C0001A034 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		005AFD4F2B1CBD170001A034 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
+		005AFD532B1CC4F90001A034 /* CustomPostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPostTVC.swift; sourceTree = "<group>"; };
+		005AFD552B1CC5060001A034 /* CustomCommentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCommentTVC.swift; sourceTree = "<group>"; };
+		005AFD572B1CEB670001A034 /* CustomPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPost.swift; sourceTree = "<group>"; };
+		005AFD592B1CF52C0001A034 /* CustomComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComment.swift; sourceTree = "<group>"; };
 		007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC1.swift; sourceTree = "<group>"; };
 		007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC2.swift; sourceTree = "<group>"; };
 		007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordSuccessVC.swift; sourceTree = "<group>"; };
@@ -97,6 +105,10 @@
 				004E82202ADC3CF0008229AB /* CommunityVC.swift */,
 				005AFD4F2B1CBD170001A034 /* PostTVC.swift */,
 				005AFD472B1CB00C0001A034 /* PostVC.swift */,
+				005AFD532B1CC4F90001A034 /* CustomPostTVC.swift */,
+				005AFD552B1CC5060001A034 /* CustomCommentTVC.swift */,
+				005AFD572B1CEB670001A034 /* CustomPost.swift */,
+				005AFD592B1CF52C0001A034 /* CustomComment.swift */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -241,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005AFD562B1CC5060001A034 /* CustomCommentTVC.swift in Sources */,
 				004E82252ADC4878008229AB /* MyPageVC.swift in Sources */,
 				007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */,
 				004E821D2ADC3C81008229AB /* HomeVC.swift in Sources */,
@@ -252,11 +265,14 @@
 				007010222ACABDB800FD6736 /* ChangePasswordVC1.swift in Sources */,
 				007F190E2AC152BE0022CB24 /* AppDelegate.swift in Sources */,
 				00E7BEE42AC998DF0046BE3F /* SignUpVC2.swift in Sources */,
+				005AFD582B1CEB670001A034 /* CustomPost.swift in Sources */,
 				007F19232AC153170022CB24 /* SignInVC.swift in Sources */,
 				004E82212ADC3CF0008229AB /* CommunityVC.swift in Sources */,
 				005AFD482B1CB00C0001A034 /* PostVC.swift in Sources */,
 				00E7BEE62AC998ED0046BE3F /* SignUpVC3.swift in Sources */,
 				00E7BEE22AC81B3B0046BE3F /* SignUpSuccessVC.swift in Sources */,
+				005AFD542B1CC4F90001A034 /* CustomPostTVC.swift in Sources */,
+				005AFD5A2B1CF52C0001A034 /* CustomComment.swift in Sources */,
 				00E7BEE02AC57D010046BE3F /* SignUpVC1.swift in Sources */,
 				007F19102AC152BE0022CB24 /* SceneDelegate.swift in Sources */,
 				004E821F2ADC3CD9008229AB /* MyVideosVC.swift in Sources */,
