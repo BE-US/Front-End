@@ -11,12 +11,13 @@
 		00420E2E2B0AFD2E005DA91E /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 00420E2D2B0AFD2E005DA91E /* SnapKit-Dynamic */; };
 		00420E312B0AFD36005DA91E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 00420E302B0AFD36005DA91E /* Then */; };
 		00420E342B0AFF19005DA91E /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 00420E332B0AFF19005DA91E /* Tabman */; };
-		00420E362B0B0209005DA91E /* CommunitySportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00420E352B0B0209005DA91E /* CommunitySportsVC.swift */; };
 		004E82172ADC3A0D008229AB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E82162ADC3A0D008229AB /* TabBarController.swift */; };
 		004E821D2ADC3C81008229AB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E821C2ADC3C81008229AB /* HomeVC.swift */; };
 		004E821F2ADC3CD9008229AB /* MyVideosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E821E2ADC3CD9008229AB /* MyVideosVC.swift */; };
 		004E82212ADC3CF0008229AB /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E82202ADC3CF0008229AB /* CommunityVC.swift */; };
 		004E82252ADC4878008229AB /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E82242ADC4878008229AB /* MyPageVC.swift */; };
+		005AFD482B1CB00C0001A034 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD472B1CB00C0001A034 /* PostVC.swift */; };
+		005AFD502B1CBD170001A034 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD4F2B1CBD170001A034 /* PostTVC.swift */; };
 		007010222ACABDB800FD6736 /* ChangePasswordVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */; };
 		007010242ACABE1D00FD6736 /* ChangePasswordVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */; };
 		007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */; };
@@ -34,12 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00420E352B0B0209005DA91E /* CommunitySportsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitySportsVC.swift; sourceTree = "<group>"; };
 		004E82162ADC3A0D008229AB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = BEUS/TabBarController.swift; sourceTree = SOURCE_ROOT; };
 		004E821C2ADC3C81008229AB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		004E821E2ADC3CD9008229AB /* MyVideosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideosVC.swift; sourceTree = "<group>"; };
 		004E82202ADC3CF0008229AB /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		004E82242ADC4878008229AB /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		005AFD472B1CB00C0001A034 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		005AFD4F2B1CBD170001A034 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
 		007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC1.swift; sourceTree = "<group>"; };
 		007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC2.swift; sourceTree = "<group>"; };
 		007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordSuccessVC.swift; sourceTree = "<group>"; };
@@ -93,7 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				004E82202ADC3CF0008229AB /* CommunityVC.swift */,
-				00420E352B0B0209005DA91E /* CommunitySportsVC.swift */,
+				005AFD4F2B1CBD170001A034 /* PostTVC.swift */,
+				005AFD472B1CB00C0001A034 /* PostVC.swift */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				004E82252ADC4878008229AB /* MyPageVC.swift in Sources */,
 				007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */,
 				004E821D2ADC3C81008229AB /* HomeVC.swift in Sources */,
+				005AFD502B1CBD170001A034 /* PostTVC.swift in Sources */,
 				004E82172ADC3A0D008229AB /* TabBarController.swift in Sources */,
 				007F19252AC168990022CB24 /* Extension.swift in Sources */,
 				007F19122AC152BE0022CB24 /* ViewController.swift in Sources */,
@@ -249,8 +253,8 @@
 				007F190E2AC152BE0022CB24 /* AppDelegate.swift in Sources */,
 				00E7BEE42AC998DF0046BE3F /* SignUpVC2.swift in Sources */,
 				007F19232AC153170022CB24 /* SignInVC.swift in Sources */,
-				00420E362B0B0209005DA91E /* CommunitySportsVC.swift in Sources */,
 				004E82212ADC3CF0008229AB /* CommunityVC.swift in Sources */,
+				005AFD482B1CB00C0001A034 /* PostVC.swift in Sources */,
 				00E7BEE62AC998ED0046BE3F /* SignUpVC3.swift in Sources */,
 				00E7BEE22AC81B3B0046BE3F /* SignUpSuccessVC.swift in Sources */,
 				00E7BEE02AC57D010046BE3F /* SignUpVC1.swift in Sources */,
