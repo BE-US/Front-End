@@ -22,6 +22,7 @@
 		005AFD562B1CC5060001A034 /* CustomCommentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD552B1CC5060001A034 /* CustomCommentTVC.swift */; };
 		005AFD582B1CEB670001A034 /* CustomPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD572B1CEB670001A034 /* CustomPost.swift */; };
 		005AFD5A2B1CF52C0001A034 /* CustomComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD592B1CF52C0001A034 /* CustomComment.swift */; };
+		005AFD5C2B1D8F350001A034 /* WriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD5B2B1D8F350001A034 /* WriteVC.swift */; };
 		007010222ACABDB800FD6736 /* ChangePasswordVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */; };
 		007010242ACABE1D00FD6736 /* ChangePasswordVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */; };
 		007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */; };
@@ -50,6 +51,7 @@
 		005AFD552B1CC5060001A034 /* CustomCommentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCommentTVC.swift; sourceTree = "<group>"; };
 		005AFD572B1CEB670001A034 /* CustomPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPost.swift; sourceTree = "<group>"; };
 		005AFD592B1CF52C0001A034 /* CustomComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComment.swift; sourceTree = "<group>"; };
+		005AFD5B2B1D8F350001A034 /* WriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteVC.swift; sourceTree = "<group>"; };
 		007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC1.swift; sourceTree = "<group>"; };
 		007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC2.swift; sourceTree = "<group>"; };
 		007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordSuccessVC.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				005AFD552B1CC5060001A034 /* CustomCommentTVC.swift */,
 				005AFD572B1CEB670001A034 /* CustomPost.swift */,
 				005AFD592B1CF52C0001A034 /* CustomComment.swift */,
+				005AFD5B2B1D8F350001A034 /* WriteVC.swift */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				00E7BEE22AC81B3B0046BE3F /* SignUpSuccessVC.swift in Sources */,
 				005AFD542B1CC4F90001A034 /* CustomPostTVC.swift in Sources */,
 				005AFD5A2B1CF52C0001A034 /* CustomComment.swift in Sources */,
+				005AFD5C2B1D8F350001A034 /* WriteVC.swift in Sources */,
 				00E7BEE02AC57D010046BE3F /* SignUpVC1.swift in Sources */,
 				007F19102AC152BE0022CB24 /* SceneDelegate.swift in Sources */,
 				004E821F2ADC3CD9008229AB /* MyVideosVC.swift in Sources */,
