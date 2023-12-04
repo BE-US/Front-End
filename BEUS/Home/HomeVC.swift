@@ -135,6 +135,9 @@ extension HomeVC {
     }
     
     @objc func categoryButtonTapped(_ sender: UIButton) {
+        let categoryVC = CategoryVC()
+        categoryVC.navigationItem.title = sender.currentTitle
+        self.navigationController?.pushViewController(categoryVC, animated: true)
     }
     
 }

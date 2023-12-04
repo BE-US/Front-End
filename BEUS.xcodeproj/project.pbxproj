@@ -23,6 +23,12 @@
 		005AFD582B1CEB670001A034 /* CustomPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD572B1CEB670001A034 /* CustomPost.swift */; };
 		005AFD5A2B1CF52C0001A034 /* CustomComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD592B1CF52C0001A034 /* CustomComment.swift */; };
 		005AFD5C2B1D8F350001A034 /* WriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD5B2B1D8F350001A034 /* WriteVC.swift */; };
+		005AFD5E2B1E0BD90001A034 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD5D2B1E0BD90001A034 /* CategoryVC.swift */; };
+		005AFD602B1E0C730001A034 /* MyVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD5F2B1E0C730001A034 /* MyVideoVC.swift */; };
+		005AFD622B1E0C850001A034 /* PopularVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD612B1E0C850001A034 /* PopularVideoVC.swift */; };
+		005AFD642B1E13460001A034 /* CustomChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD632B1E13460001A034 /* CustomChannel.swift */; };
+		005AFD662B1E14D70001A034 /* ChannelTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD652B1E14D70001A034 /* ChannelTVC.swift */; };
+		005AFD682B1E19360001A034 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005AFD672B1E19360001A034 /* ChannelVC.swift */; };
 		007010222ACABDB800FD6736 /* ChangePasswordVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */; };
 		007010242ACABE1D00FD6736 /* ChangePasswordVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */; };
 		007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */; };
@@ -52,6 +58,12 @@
 		005AFD572B1CEB670001A034 /* CustomPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPost.swift; sourceTree = "<group>"; };
 		005AFD592B1CF52C0001A034 /* CustomComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComment.swift; sourceTree = "<group>"; };
 		005AFD5B2B1D8F350001A034 /* WriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteVC.swift; sourceTree = "<group>"; };
+		005AFD5D2B1E0BD90001A034 /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		005AFD5F2B1E0C730001A034 /* MyVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideoVC.swift; sourceTree = "<group>"; };
+		005AFD612B1E0C850001A034 /* PopularVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularVideoVC.swift; sourceTree = "<group>"; };
+		005AFD632B1E13460001A034 /* CustomChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChannel.swift; sourceTree = "<group>"; };
+		005AFD652B1E14D70001A034 /* ChannelTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTVC.swift; sourceTree = "<group>"; };
+		005AFD672B1E19360001A034 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		007010212ACABDB800FD6736 /* ChangePasswordVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC1.swift; sourceTree = "<group>"; };
 		007010232ACABE1D00FD6736 /* ChangePasswordVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC2.swift; sourceTree = "<group>"; };
 		007010252ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordSuccessVC.swift; sourceTree = "<group>"; };
@@ -89,6 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				004E821C2ADC3C81008229AB /* HomeVC.swift */,
+				005AFD5D2B1E0BD90001A034 /* CategoryVC.swift */,
+				005AFD612B1E0C850001A034 /* PopularVideoVC.swift */,
+				005AFD5F2B1E0C730001A034 /* MyVideoVC.swift */,
+				005AFD652B1E14D70001A034 /* ChannelTVC.swift */,
+				005AFD632B1E13460001A034 /* CustomChannel.swift */,
+				005AFD672B1E19360001A034 /* ChannelVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -257,9 +275,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				005AFD562B1CC5060001A034 /* CustomCommentTVC.swift in Sources */,
+				005AFD622B1E0C850001A034 /* PopularVideoVC.swift in Sources */,
 				004E82252ADC4878008229AB /* MyPageVC.swift in Sources */,
+				005AFD662B1E14D70001A034 /* ChannelTVC.swift in Sources */,
+				005AFD682B1E19360001A034 /* ChannelVC.swift in Sources */,
+				005AFD602B1E0C730001A034 /* MyVideoVC.swift in Sources */,
 				007010262ACABE3E00FD6736 /* ChangePasswordSuccessVC.swift in Sources */,
 				004E821D2ADC3C81008229AB /* HomeVC.swift in Sources */,
+				005AFD642B1E13460001A034 /* CustomChannel.swift in Sources */,
 				005AFD502B1CBD170001A034 /* PostTVC.swift in Sources */,
 				004E82172ADC3A0D008229AB /* TabBarController.swift in Sources */,
 				007F19252AC168990022CB24 /* Extension.swift in Sources */,
@@ -276,6 +299,7 @@
 				00E7BEE22AC81B3B0046BE3F /* SignUpSuccessVC.swift in Sources */,
 				005AFD542B1CC4F90001A034 /* CustomPostTVC.swift in Sources */,
 				005AFD5A2B1CF52C0001A034 /* CustomComment.swift in Sources */,
+				005AFD5E2B1E0BD90001A034 /* CategoryVC.swift in Sources */,
 				005AFD5C2B1D8F350001A034 /* WriteVC.swift in Sources */,
 				00E7BEE02AC57D010046BE3F /* SignUpVC1.swift in Sources */,
 				007F19102AC152BE0022CB24 /* SceneDelegate.swift in Sources */,

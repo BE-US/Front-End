@@ -44,13 +44,11 @@ extension CustomCommentTVC {
         }
         
         nicknameLabel.do {
-            $0.text = "카림"
             $0.font = .boldSystemFont(ofSize: 15)
             $0.numberOfLines = 1
         }
         
         contentLabel.do {
-            $0.text = "내용"
             $0.font = .systemFont(ofSize: 15)
             $0.numberOfLines = 0
         }
@@ -80,12 +78,12 @@ extension CustomCommentTVC {
         
         nicknameLabel.snp.makeConstraints {
             $0.centerY.equalTo(profileImageView)
-            $0.leading.equalTo(nicknameLabel.snp.trailing).offset(5)
+            $0.leading.equalTo(profileImageView.snp.trailing).offset(5)
             $0.trailing.equalToSuperview().inset(30)
         }
         
         contentLabel.snp.makeConstraints {
-            $0.top.equalTo(nicknameLabel.snp.bottom).offset(8)
+            $0.top.equalTo(profileImageView.snp.bottom).offset(8)
             $0.leading.trailing.equalToSuperview().inset(30)
         }
         
