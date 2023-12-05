@@ -52,14 +52,12 @@ extension CustomPostTVC {
         }
         
         profileImageView.do {
-            $0.image = UIImage(named: "Karim")
             $0.contentMode = .scaleAspectFill
             $0.clipsToBounds = true
             $0.layer.cornerRadius = 22
         }
         
         nicknameLabel.do {
-            $0.text = "카림"
             $0.font = .boldSystemFont(ofSize: 15)
             $0.numberOfLines = 1
         }
