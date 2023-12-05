@@ -43,11 +43,13 @@ extension CustomPostTVC {
     private func setStyle() {
         prevImageButton.do {
             $0.setImage(UIImage(systemName: "chevron.left"), for: .normal)
+            $0.tintColor = .white
             $0.addTarget(self, action: #selector(prevImageButtonTapped(_:)), for: .touchUpInside)
         }
         
         nextImageButton.do {
             $0.setImage(UIImage(systemName: "chevron.right"), for: .normal)
+            $0.tintColor = .white
             $0.addTarget(self, action: #selector(prevImageButtonTapped(_:)), for: .touchUpInside)
         }
         
@@ -84,9 +86,8 @@ extension CustomPostTVC {
         }
         
         likeImageView.do {
-            $0.image = UIImage(systemName: "hand.thumbsup.fill")
-            $0.contentMode = .scaleAspectFill
-            $0.clipsToBounds = true
+            $0.image = UIImage(named: "Like")
+            $0.contentMode = .scaleAspectFit
         }
         
         likeLabel.do {
@@ -95,9 +96,8 @@ extension CustomPostTVC {
         }
         
         commentImageView.do {
-            $0.image = UIImage(systemName: "text.bubble.fill")
-            $0.contentMode = .scaleAspectFill
-            $0.clipsToBounds = true
+            $0.image = UIImage(named: "Comment")
+            $0.contentMode = .scaleAspectFit
         }
         
         commentLabel.do {

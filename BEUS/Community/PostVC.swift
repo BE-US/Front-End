@@ -16,7 +16,9 @@ class PostVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.view.backgroundColor = .white
+        setRightBarButton()
         setUI()
         setTableViewConfig()
     }
@@ -45,6 +47,12 @@ extension PostVC {
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+    }
+    
+    private func setRightBarButton() {
+        let rightBarButton = UIBarButtonItem(image: UIImage(named: "Ellipsis"), style: .plain, target: self, action: nil)
+        rightBarButton.tintColor = .black
+        navigationItem.rightBarButtonItem = rightBarButton
     }
     
     private func setTableViewConfig() {

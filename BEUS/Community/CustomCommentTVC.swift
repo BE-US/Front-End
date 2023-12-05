@@ -61,9 +61,8 @@ extension CustomCommentTVC {
         }
         
         ellipsisImageView.do {
-            $0.image = UIImage(systemName: "ellipsis.circle")
-            $0.contentMode = .scaleAspectFill
-            $0.clipsToBounds = true
+            $0.image = UIImage(named: "Ellipsis")
+            $0.contentMode = .scaleAspectFit
         }
     }
     
@@ -94,9 +93,8 @@ extension CustomCommentTVC {
         }
         
         ellipsisImageView.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(8)
-            $0.trailing.equalToSuperview().inset(30)
-            $0.size.equalTo(17)
+            $0.top.trailing.equalToSuperview().inset(10)
+            $0.size.equalTo(13)
         }
     }
     
