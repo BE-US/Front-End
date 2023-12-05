@@ -18,6 +18,7 @@ class PostVC: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = .white
+        setNavigationBar()
         setRightBarButton()
         setUI()
         setTableViewConfig()
