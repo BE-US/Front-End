@@ -26,6 +26,7 @@ final class CategoryVC: TabmanViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.navigationController?.navigationBar.topItem?.title = "게시판"
+        setNavigationBar()
         setUI()
         self.isScrollEnabled = false
         self.dataSource = self

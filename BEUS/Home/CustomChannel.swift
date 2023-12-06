@@ -26,4 +26,4 @@ struct CustomChannel {
     }
 }
 
-var customChannelList: [CustomChannel] = [.init(channelImage: UIImage(named: "Football")!, channelName: "채널 이름", nickname: "닉네임", team: "소속팀", grade: 9, videoNumber: 17), .init(channelImage: UIImage(named: "Football")!, channelName: "채널 이름", nickname: "닉네임", team: "소속팀", grade: 9, videoNumber: 17), .init(channelImage: UIImage(named: "Football")!, channelName: "채널 이름", nickname: "닉네임", team: "소속팀", grade: 9, videoNumber: 17)]
+var customChannelList: [CustomChannel] = [.init(channelImage: UIImage(named: "Training1")!, channelName: "신이 될 수 있는 코스", nickname: "크리스티아누", team: "마드리드", grade: 10, videoNumber: 7), .init(channelImage: UIImage(named: "Training2")!, channelName: "스트라이커의 교과서", nickname: "카림", team: "마드리드", grade: 9, videoNumber: 17), .init(channelImage: UIImage(named: "Training3")!, channelName: "대장급 미드필더의 비결", nickname: "토니", team: "마드리드", grade: 8, videoNumber: 14)]

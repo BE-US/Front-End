@@ -20,6 +20,7 @@ class MyVideoVC: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        setNavigationBar()
         setUI()
         setTableViewConfig()
     }

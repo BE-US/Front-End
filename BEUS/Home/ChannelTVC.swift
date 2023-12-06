@@ -59,9 +59,8 @@ extension ChannelTVC {
         }
         
         likeImageView.do {
-            $0.image = UIImage(systemName: "heart.fill")
-            $0.contentMode = .scaleAspectFill
-            $0.clipsToBounds = true
+            $0.image = UIImage(named: "Like")
+            $0.contentMode = .scaleAspectFit
         }
         
         gradeLabel.do {
@@ -96,7 +95,7 @@ extension ChannelTVC {
         
         teamLabel.snp.makeConstraints {
             $0.top.equalTo(nicknameLabel.snp.bottom).offset(1)
-            $0.centerX.equalTo(nicknameLabel)
+            $0.trailing.equalTo(nicknameLabel)
         }
         
         likeImageView.snp.makeConstraints {
