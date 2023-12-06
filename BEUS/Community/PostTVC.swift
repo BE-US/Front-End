@@ -62,7 +62,6 @@ extension PostTVC {
         }
         
         likeLabel.do {
-            $0.text = "10"
             $0.font = .systemFont(ofSize: 14)
         }
         
@@ -72,7 +71,6 @@ extension PostTVC {
         }
         
         commentLabel.do {
-            $0.text = "4"
             $0.font = .systemFont(ofSize: 14)
         }
     }

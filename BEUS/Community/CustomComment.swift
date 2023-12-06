@@ -22,6 +22,21 @@ struct CustomComment {
     }
 }
 
-var customCommentList: [CustomComment] = [
-    .init(profileImage: UIImage(named: "Karim")!, nickname: "카림", content: "내용", time: "07/08 22:17"), .init(profileImage: UIImage(named: "Karim")!, nickname: "카림", content: "내용", time: "07/08 22:17"), .init(profileImage: UIImage(named: "Karim")!, nickname: "카림", content: "내용", time: "07/08 22:17"), .init(profileImage: UIImage(named: "Karim")!, nickname: "카림", content: "내용", time: "07/08 22:17"), .init(profileImage: UIImage(named: "Karim")!, nickname: "카림", content: "내용", time: "07/08 22:17"),
+var customCommentList: [[CustomComment]] = [
+    [
+        .init(profileImage: UIImage(named: "Cristiano")!, nickname: "크리스티아누", content: "저요!", time: "07/08 22:17")
+    ],
+    [
+        .init(profileImage: UIImage(named: "Toni")!, nickname: "토니", content: "우와", time: "07/08 22:17"),
+        .init(profileImage: UIImage(named: "Harry")!, nickname: "해리", content: "부럽다", time: "07/08 22:30")
+    ],
+    [
+        .init(profileImage: UIImage(named: "Sergio")!, nickname: "세르히오", content: "닥시티", time: "07/08 22:17"),
+    ],
+    [
+        .init(profileImage: UIImage(named: "Cristiano")!, nickname: "크리스티아누", content: "ㅇㅇ", time: "07/08 22:17"),
+    ],
+    [
+        .init(profileImage: UIImage(named: "Cristiano")!, nickname: "크리스티아누", content: "나요 ㅋㅋ", time: "07/08 22:17"),
+    ],
 ]

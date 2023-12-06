@@ -139,6 +139,7 @@ extension CommunityVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let postVC = PostVC()
+        postVC.comments = customCommentList[indexPath.row]
         postVC.customPost = posts[indexPath.row]
         self.navigationController?.pushViewController(postVC, animated: true)
     }

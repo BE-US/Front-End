@@ -10,7 +10,7 @@ import UIKit
 class PostVC: UIViewController {
     
     var customPost: CustomPost?
-    var comments: [CustomComment] = customCommentList
+    var comments: [CustomComment] = []
     
     private let tableView = UITableView(frame: .zero, style: .plain)
     
