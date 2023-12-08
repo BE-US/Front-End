@@ -1,31 +1,31 @@
 | **스플래시**       |
 |:-------------------:|
-| ![스플래시](https://github.com/BE-US/.github/assets/124351800/d370d050-0a26-4887-a99e-7f4fd18f48ce) |
+| ![스플래시](https://github.com/BE-US/Front-End/assets/124351800/ece15399-144c-40fe-9194-8ba784fa1dfa) |
 
 | **회원가입**       |
 |:-------------------:|
-| ![회원가입](https://github.com/BE-US/.github/assets/124351800/6a436da9-5f93-457a-81a8-df9a0f367794) |
+| ![회원가입](https://github.com/BE-US/Front-End/assets/124351800/0b9f48e2-9e5f-404a-8b7c-7ece79e3d528) |
 
 | **비밀번호 변경**       |
 |:-----------------------:|
-| ![비밀번호 변경](https://github.com/BE-US/.github/assets/124351800/e925ab4e-c3a2-48ab-80a1-b86a13fa36d7) |
+| ![비밀번호 변경](https://github.com/BE-US/Front-End/assets/124351800/e285def2-4fc9-4d8b-9cc6-f2c2230e969b) |
 
 | **로그인**       |
 |:-------------------:|
-| ![로그인](https://github.com/BE-US/.github/assets/124351800/19c90636-07d2-49c8-a0f9-3c66120a1925) |
+| ![로그인](https://github.com/BE-US/Front-End/assets/124351800/b7e5c04b-d637-478d-a27a-50e2c0ee9e6a) |
 
 | **인기 영상**       |
 |:---------------------:|
-| ![인기 영상](https://github.com/BE-US/.github/assets/124351800/00058061-a770-459d-a19e-f6209c36626d) |
+| ![인기 영상](https://github.com/BE-US/Front-End/assets/124351800/9f53342c-a187-434f-bcfb-52c1bface956) |
 
 | **커뮤니티**       |
 |:-------------------:|
-| ![커뮤니티](https://github.com/BE-US/.github/assets/124351800/646f96cf-239e-45a8-8bb3-d51a9d817b84) |
+| ![커뮤니티](https://github.com/BE-US/Front-End/assets/124351800/b874b141-06b0-42a2-8e3e-90c7bb43a4dd) |
 
 | **글 작성**       |
 |:-------------------:|
-| ![글 작성](https://github.com/BE-US/.github/assets/124351800/92a3fd76-ae4d-474d-863c-3edb47f24f96) |
+| ![글 작성](https://github.com/BE-US/Front-End/assets/124351800/0ee4c336-f776-4f69-a573-c869001435b4) |
 
 | **설정**       |
 |:-------------------:|
-| ![설정](https://github.com/BE-US/.github/assets/124351800/7c956e3f-4663-4e3c-b9b1-cc4cd8a7220e) |
+| ![설정](https://github.com/BE-US/Front-End/assets/124351800/77f95379-8fbf-440a-b2a9-5467f7f6c437) |
